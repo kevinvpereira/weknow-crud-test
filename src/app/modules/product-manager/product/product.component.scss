@@ -1,0 +1,22 @@
+.product{
+    &__description{
+        width: 80%;
+    }
+
+    &__form{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &__header{
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    &__submit{
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+}

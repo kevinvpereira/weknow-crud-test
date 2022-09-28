@@ -1,0 +1,7 @@
+<mat-card class="product">
+  <mat-card-title>{{ product.descricao }}</mat-card-title>
+  <mat-card-actions>
+    <a mat-raised-button color="primary" [routerLink]="product._id">Edit</a>
+    <button mat-raised-button color="warn" (click)="deleteProduct()">Delete</button>
+  </mat-card-actions>
+</mat-card>

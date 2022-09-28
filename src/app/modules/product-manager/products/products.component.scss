@@ -1,0 +1,17 @@
+.products {
+  &__container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__line {
+    position: relative !important;
+  }
+}

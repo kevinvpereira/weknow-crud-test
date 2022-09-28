@@ -1,0 +1,20 @@
+<app-card>
+  <section class="product__header" >
+    <a mat-icon-button routerLink="../" color="primary">
+      <mat-icon>arrow_back</mat-icon>
+    </a>
+    <app-title>{{ isEdit ? "Edit Product" : "Add New Product " }}</app-title>
+  </section>
+  <section>
+    <form [formGroup]="form" (ngSubmit)="save()" class="product__form">
+      <mat-form-field appearance="fill" class="product__description">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="descricao" placeholder="Tesla X" />
+        <mat-error *ngIf="descriptionControl!.invalid"
+          >This Field is required</mat-error
+        >
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="product__submit">Save</button>
+    </form>
+  </section>
+</app-card>
